@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="Durga Maa.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous"
+  />
+</head>
+<style>
+    body{
+        font-family: 'Josefin Sans', sans-serif;
+        background-image: linear-gradient(to right, red,orange,yellow,orange,red);
+    }
+    .header{
+        text-align: center;
+        padding: 32px;
+    }
+    .button {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, blueviolet,purple);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<body>
+    <div class="header">
+        <h1><b>Gallery</b></h1>
+    </div>
+    <a href="mahalaya.html" target="_blank"><button class="button"><span> Mahalaya </span></button></a>
+    <a href="Mahasasti.html" target="_blank"><button class="button"><span> MahaSasti </span></button></a>
+    <a href="Mahasaptami.html" target="_blank"><button class="button"><span> MahaSaptami </span></button></a>
+    <a href="Mahaastami.html" target="_blank"><button class="button"><span> MahaAstami </span></button></a>
+    <a href="Navami.html" target="_blank"><button class="button"><span> Mahanabami </span></button></a>
+    <a href="Dasami.html" target="_blank"><button class="button"><span> Mahadasaami </span></button></a>
+</body>
+</html>
